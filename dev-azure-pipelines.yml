@@ -6,7 +6,7 @@ stages:
     displayName: Build Package
     jobs: 
     - job: BuildPackage
-      pool: Win10Agents
+      pool: Azure Pipelines
       steps:    
       - task: UiPathPack@2
         inputs:
@@ -25,7 +25,7 @@ stages:
     jobs:
       - deployment: deployDEV
         displayName: Deploy package to DEV Orchestrator
-        pool: Win10Agents
+        pool: Azure Pipelines
         environment: DEV
         strategy:
          runOnce:
