@@ -26,7 +26,7 @@ stages:
       - deployment: deployDEV
         displayName: Deploy package to DEV Orchestrator
         pool: Win10Agents
-        environment: DEV
+        environment: Dev
         strategy:
          runOnce:
           deploy:
