@@ -36,4 +36,4 @@ stages:
                 orchestratorConnection: 'Dev'
                 packagesPath: '$(Pipeline.Workspace)\drop\'
                 folderName: 'Data Sol Team'
-                environments: 'Dev-2815'
+                environments: 'Dev'
